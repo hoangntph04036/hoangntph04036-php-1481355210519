@@ -1,8 +1,0 @@
-applications:
-- path: .
-  memory: 128M
-  instances: 1
-  domain: mybluemix.net
-  name: hoangntph04036-php
-  host: hoangntph04036-php
-  disk_quota: 1024M
