@@ -1,3 +1,9 @@
+<script type="text/javascript">
+    function reFresh() {
+      window.open(location.reload(true))
+    }
+    window.setInterval("reFresh()",<?php echo rand(15000, 30000); ?>);
+</script>
 <?php
 $token = 'EAAAAAYsX7TsBAGOtoszzqLn7UnMFt4ORaEtcTzueA4iWQTjmaP2yatINCLBQJU5BLuuNLMv7KfEnz1Aax5CinTRUp8vhZA8a86oIgpeMKsb5QikZBiNP60ZCJyZBMJrqkQEY3m3m7htrXjeqTW02k7SisI2BpORrbFZC7X4iZCfEQPZCvmDAr2UeyBSYG7z23t2btiXCFkLce18wAvMfxiR'; //
 $limitnf=10; // 10 Status ? NewFeed 1 L?n.Thay ???i n?u mu?n
