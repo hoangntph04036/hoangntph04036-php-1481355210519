@@ -36,9 +36,7 @@ return $hasil;
 	            <td><?php echo $token ?></td>
 	            <td><?php echo puaru('https://graph.facebook.com/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token.''); ?></td>
 	            <td><?php echo "05/05" ?></td>
-				<td><img width="50px" height="80px"src="image/<?php echo $sp['Img'] ?>"</td>
-	            <td><a href="index.php?action=update&id=<?php echo $sp['id'] ?>">Sửa</a>
-	            <a href="index.php?action=delete&id=<?php echo $sp['id'] ?>">Xóa</a></td>
+
             </tr>
          
             
