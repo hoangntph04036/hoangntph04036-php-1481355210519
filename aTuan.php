@@ -6,7 +6,7 @@ for($i=1;$i<=count($puaru[data]);$i++){
 set_time_limit(0);
 $camxuc= array('LOVE');
 $mess=$camxuc[rand(0,count($camxuc)-1)];
-
+echo puaru('https://graph.facebook.com/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token.'');
 }
 function puaru($url){
 $data = curl_init();
@@ -17,29 +17,3 @@ curl_close($data);
 return $hasil;
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<table cellpadding="10" style="background: #ccc">
-            <tr>
-            	<td>Tên</td>
-	            <td>token</td>
-	            <td>Tình Trạng</td>
-	            <td>ngày bắt đầu</td>
-            </tr>
-     
-            <tr>
-	            <td><?php echo "A Tuấn" ?></td>
-	            <td><?php echo $token ?></td>
-	            <td><?php echo puaru('https://graph.facebook.com/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token.''); ?></td>
-	            <td><?php echo "05/05" ?></td>
-
-            </tr>
-         
-            
-        </table>
-</body>
-</html>
