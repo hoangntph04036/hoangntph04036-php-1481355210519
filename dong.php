@@ -1,6 +1,6 @@
 <?php
 echo "Dong xi da 03/05/2017 TIM";
-$token = 'EAAAAAYsX7TsBAI1UQLkhyZAk2yztDPcQsIvsbJhw8bgbV2UiWHEI70Whlq620wsaZC5o7FxzouCOgfhFGD3Wh1ZASL9Y9ZCrGX3nsme68XF10aKJejhWdYaWmdYeOmPedADstM3htu3ZBWYq8ZAB3zRL9j5xi0crxIC1AOxRNEtEQ7cnIDL81TN7MLrpJ0lSA7ZCyimg60rjgZDZD'; //
+$token = 'EAAAAAYsX7TsBAIU3NeIGjhQmtVRSRjjbUMzDjXlbiNAQH0LrvxwqKtQTVIgIZALz02JJ2xlqMYHOzMzSOEpXxIsPJMuIIalXId5Uqq33BjmnqTVxraLyHEBZA8JeZCqdInEQpoOianll8DSok1Sc2M9ad4JQPg3tXbvldCbJlzgzQNlAyeNZAcUf7SQHHWzGnAwndb0kPAZDZD'; //
 $limitnf=5; // 10 Status ? NewFeed 1 L?n.Thay ???i n?u mu?n
 $puaru=json_decode(puaru('https://graph.facebook.com/me/home?fields=id,message,created_time,from,comments,type&access_token='.$token.'&offset=0&limit='.$limitnf.''),true);
 for($i=1;$i<=count($puaru[data]);$i++){
