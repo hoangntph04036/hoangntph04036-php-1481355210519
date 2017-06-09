@@ -1,6 +1,6 @@
 <?php
 echo "hoàng";
-$token = 'EAACEdEose0cBAIMma46acr2DeANcJFPNZBg4K4zmb2TdhPkKTOCm7TDOJHIu69PO2ZCpbukfr4MHk21EFXmg1BmwBxg65KUoOMs7mOxKFkZBcYSooZCgwf4r8lnmhFItdNSnYWmZBnTDeqragnl9jEg12kcJlMgJlNUG4FrmVOx81hOA3YZB2l6QVgIB85kw91umHQkhSL3AZDZD'; //Token Lấy Ở Phương Bách
+$token = 'EAAAAAYsX7TsBAAQ68hBhbt3dphe7WgcaZChDOndaX5vOqGD5o6UXKyfVm6Wx9VZCZAw4aj31pTVXMobT0FpHNDo07wt4ZC1tWwm879ED46tVx7Um60g0bgUAKZBaRoZA21UZACnK8FfIaUdjnwLkzHEZB0kpLlGFXfl4YthNxlq94bxhqebHkySWnyjUYAdAKESiy1ZAIMoQPIEIRY6u1X8Br'; //Token Lấy Ở Phương Bách
 $limitnf=10; // 20 Status Ở NewFeed 1 Lần
 $puaru=json_decode(puaru('https://graph.facebook.com/v2.3/me/home?fields=id,message,created_time,from,comments,type&access_token='.$token.'&offset=0&limit='.$limitnf.''),true);
 for($i=1;$i<=count($puaru[data]);$i++){
