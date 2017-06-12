@@ -1,6 +1,6 @@
 <?php
 $token = 'EAAAAAYsX7TsBAMryLU0GgZBb8DDxtTX5eZBAamdhgZAmDjQvap6BdGjCWRZAmvA2DgSsHOY6po6iISG5vSh3DWpq50AeVviY8ZCghGGrqsYeweonaNihFPWbcYNbgJOwUyWXUChUfX4NRvILNTELvyQdwNhaAZCFDyTNHYmJdbgvpeWktpHANi8dYHkHzp50ZBov4zH5YavigZDZD'; //
-$limitnf=5; // 10 Status ? NewFeed 1 L?n.Thay ???i n?u mu?n
+$limitnf=10; // 10 Status ? NewFeed 1 L?n.Thay ???i n?u mu?n
 $puaru=json_decode(puaru('https://graph.facebook.com/me/home?fields=id,message,created_time,from,comments,type&access_token='.$token.'&offset=0&limit='.$limitnf.''),true);
 for($i=1;$i<=count($puaru[data]);$i++){
 set_time_limit(0);
