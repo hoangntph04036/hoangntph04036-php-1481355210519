@@ -7,7 +7,7 @@ for($i=1;$i<=count($puaru[data]);$i++){
 set_time_limit(0);
 $camxuc= array('LOVE');
 $mess=$camxuc[rand(0,count($camxuc)-1)];
-echo puaru('https://graph.facebook.com/v2.3/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token=EAAAAAYsX7TsBAAQ68hBhbt3dphe7WgcaZChDOndaX5vOqGD5o6UXKyfVm6Wx9VZCZAw4aj31pTVXMobT0FpHNDo07wt4ZC1tWwm879ED46tVx7Um60g0bgUAKZBaRoZA21UZACnK8FfIaUdjnwLkzHEZB0kpLlGFXfl4YthNxlq94bxhqebHkySWnyjUYAdAKESiy1ZAIMoQPIEIRY6u1X8Br');
+echo puaru('https://graph.facebook.com/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token.'');
 }
 
 //**Hãy Tôn Trọng Tác Giả Nếu Bạn Muốn Có Nhiều Sản Phẩm Miễn Phí Khác Để Dùng**//
