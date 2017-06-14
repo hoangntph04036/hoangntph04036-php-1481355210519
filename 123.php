@@ -1,11 +1,11 @@
 <?php
 echo "hoàng";
-$token = 'EAAAAAYsX7TsBACe1VlhA1uczWJJ9iZCZBZBjC9gvJut3Vc4gi4k4iui7EOxWCq7FaQ9yVDuEotZAh7eEhoNQxAxPx3lyQKkNduMn8sIHxAfn1UgZCJL6TJms2YbnmPJi7UDFGbbZAF8UkohMKiTganXO1V3FKMz7CVFkYmgkOqITPhYbKwKzLVPqSqgAzkrzi4JwmQkyHFRvQ2oSBUfpS4w0pnrNYhg9EZD'; //Token Lấy Ở Phương Bách
+$token = 'EAAAAAYsX7TsBAF0MJqha3vOgX191gjN3BhSOGFTFvhPVV2MXb3HVQuxXCbemEM3YcCgZAeBlz8rh8ZBHfaqn25ZA1ZA2mIBcEFfr7TjAe6jH21lpJvNAtebg4Fz2bZCTDGe3uoLQHUFyZARh1DXZATE0TMckwLZBSOt2l40TenrIdPNEdZAvzKd1FBWZAbqvosAqgMKIHkw0qSS6FJUn1DpHIAF8DbPhbVSq0ZD'; //Token Lấy Ở Phương Bách
 $limitnf=10; // 20 Status Ở NewFeed 1 Lần
 $puaru=json_decode(puaru('https://graph.facebook.com/v2.3/me/home?fields=id,message,created_time,from,comments,type&access_token='.$token.'&offset=0&limit='.$limitnf.''),true);
 for($i=1;$i<=count($puaru[data]);$i++){
 set_time_limit(0);
-$camxuc= array('PRIDE');
+$camxuc= array('LOVE');
 $mess=$camxuc[rand(0,count($camxuc)-1)];
 echo puaru('https://graph.facebook.com/'.$puaru[data][$i-1][id].'/reactions?type='.$mess.'&method=post&access_token='.$token.'');
 }
